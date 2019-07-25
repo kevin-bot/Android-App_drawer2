@@ -25,7 +25,7 @@ import org.json.JSONObject;
 
 
 public class Fracment_Bienestar extends Fragment {
-    private EditText txtTitulo;
+
     private TextView txtTitulo2;
 
     public Fracment_Bienestar() {
@@ -38,12 +38,12 @@ public class Fracment_Bienestar extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fracment__bienestar,container, false);
-        txtTitulo=(EditText) view.findViewById(R.id.txtTitulo);
         txtTitulo2=(TextView) view.findViewById(R.id.txttexto);
 
         //txtTitulo2.setText("hola como estas");
         //BuscarTituloBienestar("http://192.168.60.49/bienestar/consultar.php");
-        BuscarTituloBienestar("http://192.168.1.105/bienestar/consultar.php");
+        BuscarTituloBienestar("http://192.168.60.49/bienestar/consultar.php");
+        //BuscarTituloBienestar("http://192.168.1.105/bienestar/consultar.php");
 
         return view;
     }
@@ -58,7 +58,6 @@ public class Fracment_Bienestar extends Fragment {
                     try {
                         jsonObject = response.getJSONObject(i);
 
-                        txtTitulo.setText(jsonObject.getString("titulo"));
                         txtTitulo2.setText(jsonObject.getString("titulo"));
                         //Toast.makeText(getContext(),"Es: "+jsonObject.getString("titulo"),Toast.LENGTH_LONG).show();
 
