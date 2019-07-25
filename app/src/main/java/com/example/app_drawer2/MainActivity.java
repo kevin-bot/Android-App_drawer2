@@ -2,10 +2,7 @@ package com.example.app_drawer2;
 
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
+import com.example.app_drawer2.Fracmento.Fracment_Bienestar;
 
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -35,6 +32,7 @@ public class MainActivity extends AppCompatActivity
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setItemIconTintList(null);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -80,11 +78,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
+        if (id == R.id.nav_inicio) {
             // Handle the camera action
+        } else if (id == R.id.nav_bienestar) {
             cargarfracmento(new Fracment_Bienestar());
-        } else if (id == R.id.nav_gallery) {
-
         } /*else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_tools) {

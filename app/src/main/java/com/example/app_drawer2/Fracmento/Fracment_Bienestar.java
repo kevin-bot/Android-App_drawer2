@@ -1,4 +1,4 @@
-package com.example.app_drawer2;
+package com.example.app_drawer2.Fracmento;
 
 
 import android.os.Bundle;
@@ -17,6 +17,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.app_drawer2.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -41,7 +42,8 @@ public class Fracment_Bienestar extends Fragment {
         txtTitulo2=(TextView) view.findViewById(R.id.txttexto);
 
         //txtTitulo2.setText("hola como estas");
-        BuscarTituloBienestar("http://192.168.60.49/bienestar/consultar.php");
+        //BuscarTituloBienestar("http://192.168.60.49/bienestar/consultar.php");
+        BuscarTituloBienestar("http://192.168.1.105/bienestar/consultar.php");
 
         return view;
     }
