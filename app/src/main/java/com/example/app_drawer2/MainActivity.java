@@ -2,13 +2,12 @@ package com.example.app_drawer2;
 
 import android.os.Bundle;
 
-import com.example.app_drawer2.Fracmento.Fracment_Bienestar;
-
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 
 import android.view.MenuItem;
 
+import com.example.app_drawer2.Fracmento.fracmento_inicio;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -80,8 +79,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_inicio) {
             // Handle the camera action
+            cargarfracmento(new fracmento_inicio());
         } else if (id == R.id.nav_bienestar) {
-            cargarfracmento(new Fracment_Bienestar());
         } /*else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_tools) {
