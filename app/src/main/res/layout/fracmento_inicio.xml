@@ -39,6 +39,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
                         android:src="@drawable/camera" />
+                    <ImageView
+                        android:id="@+id/img_frac_princi_rotativas3"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/camera" />
 
                 </ViewFlipper>
 

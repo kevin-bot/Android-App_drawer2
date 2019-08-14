@@ -33,7 +33,7 @@ import java.util.jar.JarException;
 public class fracmento_inicio extends Fragment {
 
     ViewFlipper vfContenedorIMG;
-    ImageView imageView,imageView2;
+    ImageView imageViewPubli,imageView2Publi,imageView3Publi;
     //int vfImagenes[]= null;
     public fracmento_inicio() {
 
@@ -49,10 +49,11 @@ public class fracmento_inicio extends Fragment {
 
         TraerImagenJson("http://192.168.60.49/bienestar/consultarIMG.php");
         vfContenedorIMG=view.findViewById(R.id.idviewFlipper);
-        imageView=view.findViewById(R.id.img_frac_princi_rotativas);
-        imageView2=view.findViewById(R.id.img_frac_princi_rotativas2);
+        imageViewPubli=view.findViewById(R.id.img_frac_princi_rotativas);
+        imageView2Publi=view.findViewById(R.id.img_frac_princi_rotativas2);
+        imageView3Publi=view.findViewById(R.id.img_frac_princi_rotativas3);
 
-        int vfImagenes[]= {R.drawable.camera};
+        int vfImagenes[]= {R.drawable.univalle};
 
         for (int i=0;i<vfImagenes.length;i++){
             Llenar_ViewFlipper(vfImagenes[i]);
@@ -62,6 +63,7 @@ public class fracmento_inicio extends Fragment {
     }
 
 
+    // METODO QUE SE ENCARGA DEL FUNCIONAMIENTO DEL VIEW FLIPPER  DE LA PANTALLA PRINCIPAL
     public void Llenar_ViewFlipper(int imagen){
 
         ImageView imageView= new ImageView(getContext());
@@ -78,17 +80,19 @@ public class fracmento_inicio extends Fragment {
 
     }
 
+    //METODO ENCARGIADO DE TRAER LOS DATOS DEL JSON , EN ESTE CASO LAS IMAGENES
     public void TraerImagenJson(String URL){
         JsonArrayRequest jsonArrayRequest=  new JsonArrayRequest(URL, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 JSONObject jsonObject=null;
+                 ImageView [] vectorimagenes={imageView2Publi,imageView2Publi,imageView3Publi};//ARRAY DE LA CANTIDAD DE INMAGENES QUE PUEDEN PASAR EL LA PANTALLA PRINCIPAL
                 for (int i=0;i<response.length();i++){
                     try {
+
                             jsonObject=response.getJSONObject(i);
 
-                        imageView.setImageBitmap(Imagenesdejson(jsonObject.optString("ima")));
-
+                        vectorimagenes[i].setImageBitmap(Imagenesdejson(jsonObject.optString("ima")));
 
 
 
@@ -96,7 +100,6 @@ public class fracmento_inicio extends Fragment {
                         Toast.makeText(getContext(),"ERROR RESPONSE",Toast.LENGTH_LONG).show();
                     }
                 }
-
             }
         }, new Response.ErrorListener() {
             @Override
@@ -109,6 +112,7 @@ public class fracmento_inicio extends Fragment {
         requestQueue.add(jsonArrayRequest);
     }
 
+    //METODO ENCARGADO DE DECODIFICAR UN STRING  QUE BIENE POR EL JSON  A IMAGEN
     public Bitmap Imagenesdejson(String dato){
         Bitmap imagen=null;
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegador"
+    app:startDestination="@id/idfracment_principal_bienestar">
+
+    <fragment
+        android:id="@+id/idfracment_principal_bienestar"
+        android:name="com.example.app_drawer2.Fracmento.Fracment_principal_bienestar"
+        android:label="fragment_fracment_principal_bienestar"
+        tools:layout="@layout/fragment_fracment_principal_bienestar" >
+        <action
+            android:id="@+id/idaction_idfracment_principal_bienestar_to_fracment_sub_salud"
+            app:destination="@id/fracment_sub_salud" />
+    </fragment>
+    <fragment
+        android:id="@+id/fracment_sub_salud"
+        android:name="com.example.app_drawer2.Fracment_sub_salud"
+        android:label="fragment_fracment_sub_salud"
+        tools:layout="@layout/fragment_fracment_sub_salud" />
+</navigation>
