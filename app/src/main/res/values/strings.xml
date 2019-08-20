@@ -7,6 +7,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="Texto_footerPrincipal">Universidad de valle (caicedonia)</string>
+    <string name="TituloBienestarprincipal">Bienestar</string>
+
     <string name="menu_home">Incio</string>
     <string name="menu_gallery">Bienestar universitario</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -14,6 +17,15 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
 
+    <!-- FRACMENTO SUN SALUD BIENESTAR -->
+    <string name="Titulo_Sub_salud">UNIVERSIDAD SALUDABLE, DISCAPACIDAD Y DEPORTE</string>
+
+    <!-- FRACMENTO SUB ARTE CREATIVIDAD -->
+    <string name="Titulo_sub_arte_cultura">CREACIÓN ARTISTICA CREATIVIDAD Y CULTURAS</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--TITULO SALUD-->
+
 </resources>

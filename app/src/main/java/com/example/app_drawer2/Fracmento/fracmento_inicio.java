@@ -48,6 +48,8 @@ public class fracmento_inicio extends Fragment {
 
 
         TraerImagenJson("http://192.168.60.49/bienestar/consultarIMG.php");
+        //TraerImagenJson("http://192.168.1.103/bienestar/consultarIMG.php");
+        //TraerImagenJson("http://192.168.1.113/bienestar/consultarIMG.php");
         vfContenedorIMG=view.findViewById(R.id.idviewFlipper);
         imageViewPubli=view.findViewById(R.id.img_frac_princi_rotativas);
         imageView2Publi=view.findViewById(R.id.img_frac_princi_rotativas2);

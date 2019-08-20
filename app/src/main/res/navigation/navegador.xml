@@ -13,10 +13,28 @@
         <action
             android:id="@+id/idaction_idfracment_principal_bienestar_to_fracment_sub_salud"
             app:destination="@id/fracment_sub_salud" />
+        <action
+            android:id="@+id/idaction_idfracment_principal_bienestar_to_fracment_artis_crea_cultu"
+            app:destination="@id/fracment_artis_crea_cultu" />
+        <action
+            android:id="@+id/idaction_idfracment_principal_bienestar_to_fracment_exito_academi_per"
+            app:destination="@id/fracment_exito_academi_per" />
     </fragment>
+
     <fragment
         android:id="@+id/fracment_sub_salud"
         android:name="com.example.app_drawer2.Fracment_sub_salud"
         android:label="fragment_fracment_sub_salud"
         tools:layout="@layout/fragment_fracment_sub_salud" />
+    <fragment
+        android:id="@+id/fracment_artis_crea_cultu"
+        android:name="com.example.app_drawer2.fracment_artis_crea_cultu"
+        android:label="fragment_fracment_artis_crea_cultu"
+        tools:layout="@layout/fragment_fracment_artis_crea_cultu" />
+    <fragment
+        android:id="@+id/fracment_exito_academi_per"
+        android:name="com.example.app_drawer2.fracment_exito_academi_per"
+        android:label="fragment_fracment_exito_academi_per"
+        tools:layout="@layout/fragment_fracment_exito_academi_per" />
+
 </navigation>

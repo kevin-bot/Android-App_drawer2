@@ -1,5 +1,6 @@
 package com.example.app_drawer2;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.core.view.GravityCompat;
@@ -7,6 +8,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 
 import android.view.MenuItem;
 
+import com.example.app_drawer2.Fracmento.Fracment_principal_bienestar;
 import com.example.app_drawer2.Fracmento.fracmento_inicio;
 import com.google.android.material.navigation.NavigationView;
 
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setItemIconTintList(null);
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        cargarfracmento(new fracmento_inicio());
     }
 
     @Override
@@ -81,6 +85,8 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
             cargarfracmento(new fracmento_inicio());
         } else if (id == R.id.nav_bienestar) {
+            Intent intent= new Intent(getApplicationContext(), Activity_Bienestar.class);
+            startActivity(intent);
         } /*else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_tools) {

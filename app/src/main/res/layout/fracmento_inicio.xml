@@ -22,11 +22,17 @@
                 <ImageView
                     android:id="@+id/img_frac_princi_Uni"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="40dp"
                     android:src="@drawable/univalle" />
                 <ViewFlipper
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="7dp"
+                    android:elevation="4dp"
                     android:id="@+id/idviewFlipper">
                     <ImageView
                         android:id="@+id/img_frac_princi_rotativas"
@@ -46,6 +52,14 @@
                         android:src="@drawable/camera" />
 
                 </ViewFlipper>
+
+                <TextView
+                    android:id="@+id/idtxtParrafoInfoUnvalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Texto_footerPrincipal"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"/>
 
             </LinearLayout>
 
