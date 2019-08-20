@@ -40,7 +40,7 @@
 
     <!--FRACMENTO SUB SALUD-->
         <!--TITULO SALUD-->
-            <dimen name="TXT_titulo_layout_marginTo">35dp</dimen>
+            <dimen name="TXT_titulo_layout_marginTo">14dp</dimen>
             <dimen name="TXT_titulo_textSize">24dp</dimen>
 
 </resources>

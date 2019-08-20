@@ -47,7 +47,7 @@ public class fracmento_inicio extends Fragment {
         View view=inflater.inflate(R.layout.fracmento_inicio,container,false);
 
 
-        TraerImagenJson("http://192.168.60.49/bienestar/consultarIMG.php");
+        TraerImagenJson("http://univalle.tuinvestigacion.com/UniApp/consultarIMG.php");
         //TraerImagenJson("http://192.168.1.103/bienestar/consultarIMG.php");
         //TraerImagenJson("http://192.168.1.113/bienestar/consultarIMG.php");
         vfContenedorIMG=view.findViewById(R.id.idviewFlipper);

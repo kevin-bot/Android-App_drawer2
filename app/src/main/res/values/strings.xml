@@ -19,12 +19,15 @@
 
     <!-- FRACMENTO SUN SALUD BIENESTAR -->
     <string name="Titulo_Sub_salud">UNIVERSIDAD SALUDABLE, DISCAPACIDAD Y DEPORTE</string>
-
+    <string name="txt_texto_salud">salud</string>
     <!-- FRACMENTO SUB ARTE CREATIVIDAD -->
     <string name="Titulo_sub_arte_cultura">CREACIÓN ARTISTICA CREATIVIDAD Y CULTURAS</string>
+    <string name="txt_texto_Arte">arte</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- FRACMENTO SUB ECUITO ACADEMICO -->
+    <string name="Titulo_sub_exito_academi_per">ÉXITO ACADÉMICO Y PERMANENCIA ESTUDIANTIL </string>
+    <string name="txt_texto_exitoa_cademico">exito</string>
 
     <!--TITULO SALUD-->
 
