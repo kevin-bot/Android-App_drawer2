@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
             cargarfracmento(new fracmento_inicio());
         } else if (id == R.id.nav_bienestar) {
-            Intent intent= new Intent(getApplicationContext(), Activity_Bienestar.class);
+            Intent intent= new Intent(getApplicationContext(), Main2Activity_bienestar.class);
             startActivity(intent);
         } /*else if (id == R.id.nav_slideshow) {
 

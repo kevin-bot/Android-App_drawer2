@@ -34,13 +34,13 @@ public class Fracment_principal_bienestar extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_fracment_principal_bienestar, container, false);
 
-      /* btnArte_cultu=view.findViewById(R.id.btnArt_Cre_cultu);
+      btnArte_cultu=view.findViewById(R.id.btnArt_Cre_cultu);
         btnDeprote_disca=view.findViewById(R.id.btnDeporte_disc);
         btnExitoEstudiantil=view.findViewById(R.id.btnExitoAcademico);
-        btnProfesores_diversidad=view.findViewById(R.id.btnProfe_diversidad);¨*/
+        btnProfesores_diversidad=view.findViewById(R.id.btnProfe_diversidad);
 
 
-       /* btnDeprote_disca.setOnClickListener(new View.OnClickListener() {
+        btnDeprote_disca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 findNavController(view).navigate(R.id.idaction_idfracment_principal_bienestar_to_fracment_sub_salud);
@@ -59,7 +59,7 @@ public class Fracment_principal_bienestar extends Fragment {
             public void onClick(View view) {
                 findNavController(view).navigate(R.id.idaction_idfracment_principal_bienestar_to_fracment_exito_academi_per);
             }
-        });*/
+        });
 
         return view ;
     }
