@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
+    <!--<ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="591dp"
@@ -56,7 +56,16 @@
 
         </LinearLayout>
 
+    </ScrollView>-->
 
-    </ScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idrecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
