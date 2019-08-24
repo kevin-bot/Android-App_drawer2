@@ -28,6 +28,16 @@
     <!-- FRACMENTO SUB ECUITO ACADEMICO -->
     <string name="Titulo_sub_exito_academi_per">ÉXITO ACADÉMICO Y PERMANENCIA ESTUDIANTIL </string>
     <string name="txt_texto_exitoa_cademico">exito</string>
+    <string name="title_activity_prueba_btn_navegacion">prueba_btn_navegacion</string>
+
+
+    <!--MENU INFERIOR-->
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Actividades</string>
+    <string name="title_notifications">Sub categorias</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--TITULO SALUD-->
 

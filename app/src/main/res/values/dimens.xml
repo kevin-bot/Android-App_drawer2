@@ -9,38 +9,39 @@
 
     <!--FRACMENTO_PRINCIPAL_BIENESTAR-->
 
-        <!--TXT TITULO-->
-        <dimen name="DMtiutloBienestarPrincipal">28dp</dimen>
-        <dimen name="padding">10dp</dimen>
-        <dimen name="margintop">10dp</dimen>
+    <!--TXT TITULO-->
+    <dimen name="DMtiutloBienestarPrincipal">28dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="margintop">10dp</dimen>
 
-        <!--LINEAR UNO-->
-        <dimen name="margintoplinearBtns1">50dp</dimen>
-        <dimen name="elevacion">4dp</dimen>
-        <dimen name="linear_layout_marginLeft">20dp</dimen>
-        <dimen name="linear_layout_marginRight">20dp</dimen>
-        <dimen name="linear_layout_marginBottom">20dp</dimen>
-
-
-        <!--btnArt_Cre_cultu-->
-        <dimen name="layout_width_Art">300dp</dimen>
-        <dimen name="layout_height_Art">200dp</dimen>
-        <dimen name="layout_margin_Art">2dp</dimen>
+    <!--LINEAR UNO-->
+    <dimen name="margintoplinearBtns1">50dp</dimen>
+    <dimen name="elevacion">4dp</dimen>
+    <dimen name="linear_layout_marginLeft">20dp</dimen>
+    <dimen name="linear_layout_marginRight">20dp</dimen>
+    <dimen name="linear_layout_marginBottom">20dp</dimen>
 
 
-        <!--btnDeporte_disc-->
-        <dimen name="layout_width_Dep">300dp</dimen>
-        <dimen name="layout_height_Dep">200dp</dimen>
-        <dimen name="layout_margin_dep">2dp</dimen>
+    <!--btnArt_Cre_cultu-->
+    <dimen name="layout_width_Art">300dp</dimen>
+    <dimen name="layout_height_Art">200dp</dimen>
+    <dimen name="layout_margin_Art">2dp</dimen>
 
-        <!--LINEAR DOS-->
-        <dimen name="margintoplinearBtns2">50dp</dimen>
-        <!--btn-->
-        <!--btn-->
+
+    <!--btnDeporte_disc-->
+    <dimen name="layout_width_Dep">300dp</dimen>
+    <dimen name="layout_height_Dep">200dp</dimen>
+    <dimen name="layout_margin_dep">2dp</dimen>
+
+    <!--LINEAR DOS-->
+    <dimen name="margintoplinearBtns2">50dp</dimen>
+    <!--btn-->
+    <!--btn-->
 
     <!--FRACMENTO SUB SALUD-->
-        <!--TITULO SALUD-->
-            <dimen name="TXT_titulo_layout_marginTo">14dp</dimen>
-            <dimen name="TXT_titulo_textSize">24dp</dimen>
+    <!--TITULO SALUD-->
+    <dimen name="TXT_titulo_layout_marginTo">14dp</dimen>
+    <dimen name="TXT_titulo_textSize">20dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 
 </resources>

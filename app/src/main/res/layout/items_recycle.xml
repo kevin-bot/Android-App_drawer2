@@ -8,14 +8,14 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark">
+        android:background="@color/colorfondo">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorfondo"
             android:layout_margin="10dp"
             android:elevation="4dp"
-            android:background="@color/colorAccent"
             android:orientation="vertical">
 
             <TextView
@@ -25,7 +25,7 @@
                 android:layout_marginBottom="7dp"
                 android:gravity="center"
                 android:text="TextView"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/Img_uno"

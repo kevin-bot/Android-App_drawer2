@@ -35,6 +35,15 @@
         android:id="@+id/fracment_exito_academi_per"
         android:name="com.example.app_drawer2.fracment_exito_academi_per"
         android:label="fragment_fracment_exito_academi_per"
-        tools:layout="@layout/fragment_fracment_exito_academi_per" />
+        tools:layout="@layout/fragment_fracment_exito_academi_per" >
+        <action
+            android:id="@+id/action_fracment_exito_academi_per_to_main3Activity_Arte"
+            app:destination="@id/main3Activity_Arte" />
+    </fragment>
+    <activity
+        android:id="@+id/main3Activity_Arte"
+        android:name="com.example.app_drawer2.Main3Activity_Arte"
+        android:label="activity_main3__arte"
+        tools:layout="@layout/activity_main3__arte" />
 
 </navigation>
