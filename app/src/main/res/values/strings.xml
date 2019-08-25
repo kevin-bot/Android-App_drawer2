@@ -41,4 +41,19 @@
 
     <!--TITULO SALUD-->
 
+    <!--Cultura-->
+    <string name="musicaTitulo">Musica</string>
+    <string name="musicaTexto">En esta categoria se encuentra todo sobre musica</string>
+
+    <string name="TeatroTitulo">Teatro</string>
+    <string name="TeatroTexto">En esta categoria se encuentra todo sobre teatro</string>
+
+    <string name="DanzaTitulo">Danza</string>
+    <string name="DanzaTexto">En esta categoria se encuentra todo sobre danza</string>
+
+    <string name="CantoTitulo">Canto</string>
+    <string name="CantoTexto">En esta categoria se encuentra todo sobre canto</string>
+    <!---->
+
+
 </resources>

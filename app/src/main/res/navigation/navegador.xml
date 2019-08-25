@@ -30,20 +30,44 @@
         android:id="@+id/fracment_artis_crea_cultu"
         android:name="com.example.app_drawer2.fracment_artis_crea_cultu"
         android:label="fragment_fracment_artis_crea_cultu"
-        tools:layout="@layout/fragment_fracment_artis_crea_cultu" />
+        tools:layout="@layout/fragment_fracment_artis_crea_cultu" >
+        <action
+            android:id="@+id/idaction_fracment_artis_crea_cultu_to_musica2"
+            app:destination="@id/musica" />
+        <action
+            android:id="@+id/idaction_fracment_artis_crea_cultu_to_teatro"
+            app:destination="@id/teatro" />
+        <action
+            android:id="@+id/idaction_fracment_artis_crea_cultu_to_danza"
+            app:destination="@id/danza" />
+        <action
+            android:id="@+id/idaction_fracment_artis_crea_cultu_to_canto"
+            app:destination="@id/danza" />
+    </fragment>
     <fragment
         android:id="@+id/fracment_exito_academi_per"
         android:name="com.example.app_drawer2.fracment_exito_academi_per"
         android:label="fragment_fracment_exito_academi_per"
-        tools:layout="@layout/fragment_fracment_exito_academi_per" >
-        <action
-            android:id="@+id/action_fracment_exito_academi_per_to_main3Activity_Arte"
-            app:destination="@id/main3Activity_Arte" />
-    </fragment>
-    <activity
-        android:id="@+id/main3Activity_Arte"
-        android:name="com.example.app_drawer2.Main3Activity_Arte"
-        android:label="activity_main3__arte"
-        tools:layout="@layout/activity_main3__arte" />
+        tools:layout="@layout/fragment_fracment_exito_academi_per" />
+    <fragment
+        android:id="@+id/musica"
+        android:name="com.example.app_drawer2.Musica"
+        android:label="fragment_musica"
+        tools:layout="@layout/fragment_musica" />
+    <fragment
+        android:id="@+id/teatro"
+        android:name="com.example.app_drawer2.Teatro"
+        android:label="fragment_teatro"
+        tools:layout="@layout/fragment_teatro" />
+    <fragment
+        android:id="@+id/danza"
+        android:name="com.example.app_drawer2.Danza"
+        android:label="fragment_danza"
+        tools:layout="@layout/fragment_danza" />
+    <fragment
+        android:id="@+id/canto"
+        android:name="com.example.app_drawer2.Canto"
+        android:label="fragment_canto"
+        tools:layout="@layout/fragment_canto" />
 
 </navigation>

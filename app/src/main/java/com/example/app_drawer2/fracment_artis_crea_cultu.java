@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -47,19 +48,38 @@ public class fracment_artis_crea_cultu extends Fragment {
 
         view=inflater.inflate(R.layout.fragment_fracment_artis_crea_cultu, container, false);
 
+        CardView cardViewMusica=view.findViewById(R.id.idcardviewMusica);
+        CardView cardViewTatro=view.findViewById(R.id.idcardviewTeatro);
+        CardView cardViewDanza=view.findViewById(R.id.idcardviewDanza);
+        CardView cardViewCanto=view.findViewById(R.id.idcardviewCanto);
 
-       /* BottomNavigationView navView = view.findViewById(R.id.nav_view);
-        //mTextMessage = findViewById(R.id.message);
-        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        cardViewMusica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findNavController(view).navigate(R.id.idaction_fracment_artis_crea_cultu_to_musica2);
+            }
+        });
 
+        cardViewTatro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findNavController(view).navigate(R.id.idaction_fracment_artis_crea_cultu_to_teatro);
+            }
+        });
 
+        cardViewDanza.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findNavController(view).navigate(R.id.idaction_fracment_artis_crea_cultu_to_danza);
+            }
+        });
 
-        recyclerView=view.findViewById(R.id.idrecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
-        recyclerViewAdaptadorArtistica = new RecyclerViewAdaptadorArtistica(ObteneArtisticas());
-        recyclerView.setAdapter(recyclerViewAdaptadorArtistica);*/
-
+        cardViewCanto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findNavController(view).navigate(R.id.idaction_fracment_artis_crea_cultu_to_canto);
+            }
+        });
         return view;
     }
 
