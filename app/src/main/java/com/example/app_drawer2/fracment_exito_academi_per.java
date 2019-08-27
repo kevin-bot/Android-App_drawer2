@@ -40,11 +40,7 @@ public class fracment_exito_academi_per extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_fracment_exito_academi_per, container, false);
 
-        recyclerView=view.findViewById(R.id.idrecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        recyclerViewAdaptadorExiAcademico = new RecyclerViewAdaptadorExiAcademico(ObteneExitoAcademico());
-        recyclerView.setAdapter(recyclerViewAdaptadorExiAcademico);
 
         return view;
     }

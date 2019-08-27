@@ -25,7 +25,32 @@
         android:id="@+id/fracment_sub_salud"
         android:name="com.example.app_drawer2.Fracment_sub_salud"
         android:label="fragment_fracment_sub_salud"
-        tools:layout="@layout/fragment_fracment_sub_salud" />
+        tools:layout="@layout/fragment_fracment_sub_salud" >
+        <action
+            android:id="@+id/idaction_fracment_sub_salud_to_futbol_sala"
+            app:destination="@id/futbol_sala" />
+        <action
+            android:id="@+id/idaction_fracment_sub_salud_to_fragment_baloncesto"
+            app:destination="@id/fragment_baloncesto" />
+        <action
+            android:id="@+id/idaction_fracment_sub_salud_to_fragmentNatacion"
+            app:destination="@id/fragmentNatacion" />
+        <action
+            android:id="@+id/idaction_fracment_sub_salud_to_fragmentVoleybol"
+            app:destination="@id/fragmentVoleybol" />
+        <action
+            android:id="@+id/idaction_fracment_sub_salud_to_fragmentTenis_de_mesa"
+            app:destination="@id/fragmentTenis_de_mesa" />
+        <action
+            android:id="@+id/idaction_fracment_sub_salud_to_fragmentAjedrez"
+            app:destination="@id/fragmentAjedrez" />
+        <action
+            android:id="@+id/idaction_fracment_sub_salud_to_atletismo"
+            app:destination="@id/atletismoFragment" />
+        <action
+            android:id="@+id/idaction_fracment_sub_salud_to_fragment_futbol"
+            app:destination="@id/fragment_futbol" />
+    </fragment>
     <fragment
         android:id="@+id/fracment_artis_crea_cultu"
         android:name="com.example.app_drawer2.fracment_artis_crea_cultu"
@@ -69,5 +94,45 @@
         android:name="com.example.app_drawer2.Canto"
         android:label="fragment_canto"
         tools:layout="@layout/fragment_canto" />
+    <fragment
+        android:id="@+id/futbol_sala"
+        android:name="com.example.app_drawer2.futbol_sala"
+        android:label="fragment_futbol_sala"
+        tools:layout="@layout/fragment_futbol_sala" />
+    <fragment
+        android:id="@+id/fragment_baloncesto"
+        android:name="com.example.app_drawer2.fragment_baloncesto"
+        android:label="fragment_fragment_baloncesto"
+        tools:layout="@layout/fragment_fragment_baloncesto" />
+    <fragment
+        android:id="@+id/fragmentNatacion"
+        android:name="com.example.app_drawer2.FragmentNatacion"
+        android:label="fragment_fragment_natacion"
+        tools:layout="@layout/fragment_fragment_natacion" />
+    <fragment
+        android:id="@+id/fragmentVoleybol"
+        android:name="com.example.app_drawer2.FragmentVoleybol"
+        android:label="fragment_fragment_voleybol"
+        tools:layout="@layout/fragment_fragment_voleybol" />
+    <fragment
+        android:id="@+id/fragmentTenis_de_mesa"
+        android:name="com.example.app_drawer2.FragmentTenis_de_mesa"
+        android:label="fragment_fragment_tenis_de_mesa"
+        tools:layout="@layout/fragment_fragment_tenis_de_mesa" />
+    <fragment
+        android:id="@+id/fragmentAjedrez"
+        android:name="com.example.app_drawer2.FragmentAjedrez"
+        android:label="fragment_fragment_ajedrez"
+        tools:layout="@layout/fragment_fragment_ajedrez" />
+    <fragment
+        android:id="@+id/atletismoFragment"
+        android:name="com.example.app_drawer2.AtletismoFragment"
+        android:label="fragment_atletismo"
+        tools:layout="@layout/fragment_atletismo" />
+    <fragment
+        android:id="@+id/fragment_futbol"
+        android:name="com.example.app_drawer2.Fragment_futbol"
+        android:label="fragment_fragment_futbol"
+        tools:layout="@layout/fragment_fragment_futbol" />
 
 </navigation>

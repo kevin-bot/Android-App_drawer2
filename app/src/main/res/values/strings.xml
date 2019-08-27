@@ -43,17 +43,42 @@
 
     <!--Cultura-->
     <string name="musicaTitulo">Musica</string>
-    <string name="musicaTexto">En esta categoria se encuentra todo sobre musica</string>
+    <string name="musicaTexto">Eventos,Actividades,Conciertos,Presentaciones</string>
 
     <string name="TeatroTitulo">Teatro</string>
-    <string name="TeatroTexto">En esta categoria se encuentra todo sobre teatro</string>
+    <string name="TeatroTexto">Eventos,Actividades,Presentaciones</string>
 
     <string name="DanzaTitulo">Danza</string>
-    <string name="DanzaTexto">En esta categoria se encuentra todo sobre danza</string>
+    <string name="DanzaTexto">Eventos,Actividades,Presentaciones</string>
 
     <string name="CantoTitulo">Canto</string>
-    <string name="CantoTexto">En esta categoria se encuentra todo sobre canto</string>
-    <!---->
+    <string name="CantoTexto">Eventos,Actividades,Conciertos,Presentaciones</string>
+    <!--Deporte-->
+
+    <!--Cultura-->
+    <string name="futbolTitulo">Futbol</string>
+    <string name="futbolexto">Eventos,Actividades,consursos,toneos</string>
+
+    <string name="NatacionTitulo">Natación</string>
+    <string name="NatacionTexto">Eventos,Actividades,consursos,toneos</string>
+
+    <string name="VaoleybolTitulo">Voleybol</string>
+    <string name="VolybolTexto">Eventos,Actividades,consursos,toneos</string>
+
+    <string name="tenis_de_mesaTitulo">Tenis de mesa</string>
+    <string name="tenid_de_mesaTexto">Eventos,Actividades,consursos,toneos</string>
+
+    <string name="futbol_salaTitulo">Futbol sala</string>
+    <string name="futbo_salalexto">Eventos,Actividades,consursos,toneos</string>
+
+    <string name="AjedrezTitulo">Ajedrez</string>
+    <string name="AjedrezTexto">Eventos,Actividades,consursos,toneos</string>
+
+    <string name="atletismoTitulo">Atletismo</string>
+    <string name="atletismoTexto">Eventos,Actividades,consursos,toneos</string>
+
+    <string name="BaloncestoTitulo">Baloncesto</string>
+    <string name="BaloncestoTexto">Eventos,Actividades,consursos,toneos</string>
 
 
 </resources>
