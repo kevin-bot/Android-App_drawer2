@@ -77,7 +77,7 @@ public class fracment_artis_crea_cultu extends Fragment {
         cardViewCanto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                findNavController(view).navigate(R.id.idaction_fracment_artis_crea_cultu_to_canto);
+                findNavController(view).navigate(R.id.action_fracment_artis_crea_cultu_to_canto);
             }
         });
         return view;

@@ -66,8 +66,8 @@
             android:id="@+id/idaction_fracment_artis_crea_cultu_to_danza"
             app:destination="@id/danza" />
         <action
-            android:id="@+id/idaction_fracment_artis_crea_cultu_to_canto"
-            app:destination="@id/danza" />
+            android:id="@+id/action_fracment_artis_crea_cultu_to_canto"
+            app:destination="@id/canto" />
     </fragment>
     <fragment
         android:id="@+id/fracment_exito_academi_per"
