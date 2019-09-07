@@ -47,13 +47,14 @@ public class fracmento_inicio extends Fragment {
         View view=inflater.inflate(R.layout.fracmento_inicio,container,false);
 
 
-        TraerImagenJson("http://univalle.tuinvestigacion.com/UniApp/consultarIMG.php");
-        //TraerImagenJson("http://192.168.1.103/bienestar/consultarIMG.php");
+       // TraerImagenJson("http://univalle.tuinvestigacion.com/UniApp/consultarIMG.php");
+        TraerImagenJson("http://univalle.tuinvestigacion.com/app/jsn/consultarimgprincipal.php");
         //TraerImagenJson("http://192.168.1.113/bienestar/consultarIMG.php");
         vfContenedorIMG=view.findViewById(R.id.idviewFlipper);
         imageViewPubli=view.findViewById(R.id.img_frac_princi_rotativas);
         imageView2Publi=view.findViewById(R.id.img_frac_princi_rotativas2);
         imageView3Publi=view.findViewById(R.id.img_frac_princi_rotativas3);
+
 
         int vfImagenes[]= {R.drawable.univalle};
 
@@ -88,7 +89,7 @@ public class fracmento_inicio extends Fragment {
             @Override
             public void onResponse(JSONArray response) {
                 JSONObject jsonObject=null;
-                 ImageView [] vectorimagenes={imageView2Publi,imageView2Publi,imageView3Publi};//ARRAY DE LA CANTIDAD DE INMAGENES QUE PUEDEN PASAR EL LA PANTALLA PRINCIPAL
+                 ImageView [] vectorimagenes={imageViewPubli,imageView2Publi,imageView3Publi};//ARRAY DE LA CANTIDAD DE INMAGENES QUE PUEDEN PASAR EL LA PANTALLA PRINCIPAL
                 for (int i=0;i<response.length();i++){
                     try {
 
