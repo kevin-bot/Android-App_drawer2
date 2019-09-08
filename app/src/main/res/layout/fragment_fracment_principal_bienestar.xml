@@ -35,58 +35,58 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:elevation="@dimen/elevacion"
-                    android:layout_marginLeft="@dimen/linear_layout_marginLeft"
-                    android:layout_marginRight="@dimen/linear_layout_marginRight"
-                    android:layout_marginBottom="@dimen/linear_layout_marginBottom"
-                    android:padding="0dp"
                     android:layout_marginTop="@dimen/margintoplinearBtns1">
 
 
                     <ImageButton
                         android:id="@+id/btnArt_Cre_cultu"
                         android:layout_width="@dimen/layout_width_Art"
-                        android:layout_height="@dimen/layout_height_Art"
+                        android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:layout_margin="@dimen/layout_margin_Art"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="1dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/botones" />
+                        android:background="#fff"
+                        android:src="@drawable/cultura" />
 
                     <ImageButton
                         android:id="@+id/btnDeporte_disc"
                         android:layout_width="@dimen/layout_width_Dep"
-                        android:layout_height="@dimen/layout_height_Dep"
+                        android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:layout_margin="@dimen/layout_margin_Art"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="5dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/botones" />
+                        android:background="#fff"
+                        android:src="@drawable/deporte" />
 
                 </LinearLayout>
 
            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+               android:layout_marginTop="40dp"
                 android:orientation="horizontal"
-               android:layout_marginLeft="@dimen/linear_layout_marginLeft"
-               android:layout_marginRight="@dimen/linear_layout_marginRight"
-               android:layout_marginBottom="@dimen/linear_layout_marginBottom"
                android:elevation="@dimen/elevacion">
 
                 <ImageButton
                     android:id="@+id/btnExitoAcademico"
                     android:layout_width="@dimen/layout_width_Art"
-                    android:layout_height="@dimen/layout_height_Art"
+                    android:layout_height="100dp"
                     android:layout_weight="1"
-                    android:layout_margin="@dimen/layout_margin_Art"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#fff"
                     android:scaleType="centerCrop"
                     android:src="@drawable/botones" />
                 <ImageButton
                     android:id="@+id/btnProfe_diversidad"
                     android:layout_width="@dimen/layout_width_Dep"
-                    android:layout_height="@dimen/layout_height_Dep"
+                    android:layout_height="100dp"
                     android:layout_weight="1"
-                    android:layout_margin="@dimen/layout_margin_dep"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff"
                     android:scaleType="centerCrop"
                     android:src="@drawable/botones" />
             </LinearLayout>

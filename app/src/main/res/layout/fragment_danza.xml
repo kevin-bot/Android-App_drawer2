@@ -77,9 +77,7 @@
                 android:layout_margin="10dp"
                 android:id="@+id/CidcardviewMusica2">
 
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -90,7 +88,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="1dp"
                             android:text="@string/musicaTitulo"
                             android:textStyle="bold"
                             android:id="@+id/Dtxt_titulo_actividadDos"/>
@@ -103,7 +101,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="100dp"
                             android:padding="10dp"
                             android:id="@+id/Dimg_actividadDos"/>
 
@@ -114,7 +112,7 @@
                             android:background="@color/lightgray" />
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="50dp"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="@string/musicaTexto"
@@ -122,7 +120,6 @@
 
 
                     </LinearLayout>
-                </ScrollView>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -143,7 +140,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="1dp"
                             android:text="@string/musicaTitulo"
                             android:textStyle="bold"
                             android:id="@+id/Dtxt_titulo_actividadTres"/>
@@ -156,7 +153,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="100dp"
                             android:padding="10dp"
                             android:id="@+id/Dimg_actividadTres"/>
 
@@ -167,7 +164,7 @@
                             android:background="@color/lightgray" />
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="50dp"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="@string/musicaTexto"
@@ -196,7 +193,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="1dp"
                             android:text="@string/musicaTitulo"
                             android:textStyle="bold"
                             android:id="@+id/Dtxt_titulo_actividadCuatro"/>
@@ -209,7 +206,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="100dp"
                             android:padding="10dp"
                             android:id="@+id/Dimg_actividadCuatro"/>
 
@@ -220,7 +217,7 @@
                             android:background="@color/lightgray" />
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="50dp"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="@string/musicaTexto"
