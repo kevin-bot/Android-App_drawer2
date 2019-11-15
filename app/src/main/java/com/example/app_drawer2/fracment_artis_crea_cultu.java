@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.app_drawer2.Clases.CreasionArtistica;
@@ -40,6 +41,8 @@ public class fracment_artis_crea_cultu extends Fragment {
         // Required empty public constructor
     }
 
+    private Button btnmusica,btnteatro,btndanza,btncanto;
+
     View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,33 +51,33 @@ public class fracment_artis_crea_cultu extends Fragment {
 
         view=inflater.inflate(R.layout.fragment_fracment_artis_crea_cultu, container, false);
 
-        CardView cardViewMusica=view.findViewById(R.id.idcardviewMusica);
-        CardView cardViewTatro=view.findViewById(R.id.idcardviewTeatro);
-        CardView cardViewDanza=view.findViewById(R.id.idcardviewDanza);
-        CardView cardViewCanto=view.findViewById(R.id.idcardviewCanto);
+        btnmusica=view.findViewById(R.id.btnmusica);
+        btnteatro=view.findViewById(R.id.btnteatro);
+        btndanza=view.findViewById(R.id.btndanza);
+        btncanto=view.findViewById(R.id.btncanto);
 
-        cardViewMusica.setOnClickListener(new View.OnClickListener() {
+        btnmusica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 findNavController(view).navigate(R.id.idaction_fracment_artis_crea_cultu_to_musica2);
             }
         });
 
-        cardViewTatro.setOnClickListener(new View.OnClickListener() {
+        btnteatro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 findNavController(view).navigate(R.id.idaction_fracment_artis_crea_cultu_to_teatro);
             }
         });
 
-        cardViewDanza.setOnClickListener(new View.OnClickListener() {
+        btndanza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 findNavController(view).navigate(R.id.idaction_fracment_artis_crea_cultu_to_danza);
             }
         });
 
-        cardViewCanto.setOnClickListener(new View.OnClickListener() {
+        btncanto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 findNavController(view).navigate(R.id.action_fracment_artis_crea_cultu_to_canto);

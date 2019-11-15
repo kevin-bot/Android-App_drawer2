@@ -48,7 +48,10 @@ public class fracmento_inicio extends Fragment {
 
 
        // TraerImagenJson("http://univalle.tuinvestigacion.com/UniApp/consultarIMG.php");
+
         TraerImagenJson("http://univalle.tuinvestigacion.com/app/jsn/consultarimgprincipal.php");
+
+
         //TraerImagenJson("http://192.168.1.113/bienestar/consultarIMG.php");
         vfContenedorIMG=view.findViewById(R.id.idviewFlipper);
         imageViewPubli=view.findViewById(R.id.img_frac_princi_rotativas);

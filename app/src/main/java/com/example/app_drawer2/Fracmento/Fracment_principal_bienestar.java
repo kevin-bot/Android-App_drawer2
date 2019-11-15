@@ -21,8 +21,8 @@ import static androidx.navigation.Navigation.findNavController;
  * A simple {@link Fragment} subclass.
  */
 public class Fracment_principal_bienestar extends Fragment {
-        private ImageView btnArte_cultu,btnDeprote_disca,btnExitoEstudiantil,btnProfesores_diversidad;
-
+        //private ImageView btnArte_cultu,btnDeprote_disca,btnExitoEstudiantil,btnProfesores_diversidad;
+        private Button btnArte_cultu,btnDeprote_disca,btnExitoEstudiantil,btnProfesores_diversidad;
     public Fracment_principal_bienestar() {
         // Required empty public constructor
     }
@@ -34,9 +34,9 @@ public class Fracment_principal_bienestar extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_fracment_principal_bienestar, container, false);
 
-      btnArte_cultu=view.findViewById(R.id.btnArt_Cre_cultu);
-        btnDeprote_disca=view.findViewById(R.id.btnDeporte_disc);
-        btnExitoEstudiantil=view.findViewById(R.id.btnExitoAcademico);
+      btnArte_cultu=view.findViewById(R.id.buttonArte);
+        btnDeprote_disca=view.findViewById(R.id.buttonDeporte);
+        btnExitoEstudiantil=view.findViewById(R.id.buttonExitoacademiuco);
         btnProfesores_diversidad=view.findViewById(R.id.btnProfe_diversidad);
 
 
