@@ -6,22 +6,404 @@
     android:layout_height="match_parent"
     tools:context=".Fracment_sub_salud">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/TXT_titulo_layout_marginTo"
-        android:textSize="@dimen/TXT_titulo_textSize"
-        android:gravity="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="@string/Titulo_Sub_salud"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+   <!-- <TextView
+         android:id="@+id/Titulo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/TXT_titulo_layout_marginTo"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:gravity="center"
+         android:elevation="3dp"
+         android:text="@string/Titulo_Sub_salud"
+         android:textColor="@color/colorPrimaryDark"
+         android:textSize="@dimen/TXT_titulo_textSize"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />-->
 
-    </ScrollView>
+   <ScrollView
+       android:id="@+id/scrollView2"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/colorfondo"
+          android:orientation="vertical"
+          android:padding="10dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipToPadding="false"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:id="@+id/idcardviewFutbol_sala">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="64dp"
+                      android:layout_height="64dp"
+                      android:background="@drawable/cerclebackgroundpurple"
+                      android:padding="10dp"
+                      app:srcCompat="@drawable/ic_futbol24px"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="@string/futbol_salaTitulo"
+                      android:textStyle="bold" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_margin="10dp"
+                      android:background="@color/lightgray" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="@string/futbo_salalexto" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:id="@+id/idcardviewBaloncesto">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="64dp"
+                      android:layout_height="64dp"
+                      android:background="@drawable/cerclebackgroundgreen"
+                      android:padding="10dp"
+                      app:srcCompat="@drawable/ic_baloncesto24px" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="@string/BaloncestoTitulo"
+                      android:textStyle="bold" />
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:layout_margin="10dp"
+                       android:background="@color/lightgray" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="@string/BaloncestoTexto" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:clipToPadding="false"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:id="@+id/idcardviewNatacion">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="64dp"
+                      android:layout_height="64dp"
+                      android:background="@drawable/circlebacgroudpink"
+                      android:padding="10dp"
+                      app:srcCompat="@drawable/ic_natacion24px"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="@string/NatacionTitulo"
+                      android:textStyle="bold" />
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:layout_margin="10dp"
+                       android:background="@color/lightgray" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="@string/NatacionTexto" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:id="@+id/idcardviewVoleybol">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="64dp"
+                      android:layout_height="64dp"
+                      android:background="@drawable/cerclebackgroundyello"
+                      android:padding="10dp"
+                      app:srcCompat="@drawable/ic_voleybolpx" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="@string/VaoleybolTitulo"
+                      android:textStyle="bold" />
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:layout_margin="10dp"
+                       android:background="@color/lightgray" />}
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="@string/VolybolTexto" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:clipToPadding="false"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:id="@+id/idcardviewtenis_de_mesa">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="64dp"
+                      android:layout_height="64dp"
+                      android:background="@drawable/cerclebackgroundpurple"
+                      android:padding="10dp"
+                      app:srcCompat="@drawable/ic_tenis_de_mesa24px" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="@string/tenis_de_mesaTitulo"
+                      android:textStyle="bold" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_margin="10dp"
+                      android:background="@color/lightgray" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="@string/tenid_de_mesaTexto" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:id="@+id/idcardviewAjedrez">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   >
+
+                  <ImageView
+                      android:layout_width="64dp"
+                      android:layout_height="64dp"
+                      android:background="@drawable/cerclebackgroundpurple"
+                      android:padding="10dp"
+                      app:srcCompat="@drawable/ic_ajedrez24px" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="@string/AjedrezTitulo"
+                      android:textStyle="bold" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_margin="10dp"
+                      android:background="@color/lightgray" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="@string/AjedrezTexto" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+         </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clipToPadding="false"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+              <androidx.cardview.widget.CardView
+                  android:layout_width="155dp"
+                  android:layout_height="190dp"
+                  android:layout_margin="10dp"
+                  android:id="@+id/idcardviewAtletismo">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:layout_width="64dp"
+                          android:layout_height="64dp"
+                          android:background="@drawable/cerclebackgroundpurple"
+                          android:padding="10dp"
+                          app:srcCompat="@drawable/ic_atletismo24px" />
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:text="@string/atletismoTitulo"
+                          android:textStyle="bold" />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_margin="10dp"
+                          android:background="@color/lightgray" />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:padding="5dp"
+                          android:text="@string/atletismoTexto" />
+
+
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+                  android:layout_width="155dp"
+                  android:layout_height="190dp"
+                  android:layout_margin="10dp"
+                  android:id="@+id/idcardviewFutbol">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:layout_width="64dp"
+                          android:layout_height="64dp"
+                          android:background="@drawable/cerclebackgroundpurple"
+                          android:padding="10dp"
+                          app:srcCompat="@drawable/ic_futbol24px" />
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:text="@string/futbolTitulo"
+                          android:textStyle="bold" />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_margin="10dp"
+                          android:background="@color/lightgray" />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:padding="5dp"
+                          android:text="@string/futbolexto" />
+
+
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+          </LinearLayout>
+
+      </LinearLayout>
+   </ScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
