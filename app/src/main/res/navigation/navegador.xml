@@ -15,7 +15,9 @@
             app:destination="@id/fracment_sub_salud" />
         <action
             android:id="@+id/idaction_idfracment_principal_bienestar_to_fracment_artis_crea_cultu"
-            app:destination="@id/fracment_artis_crea_cultu" />
+            app:destination="@id/fracment_artis_crea_cultu"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:popEnterAnim="@anim/fragment_fade_enter" />
         <action
             android:id="@+id/idaction_idfracment_principal_bienestar_to_fracment_exito_academi_per"
             app:destination="@id/fracment_exito_academi_per" />
