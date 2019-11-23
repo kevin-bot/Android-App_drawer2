@@ -33,8 +33,9 @@ import java.util.jar.JarException;
 public class fracmento_inicio extends Fragment {
 
     ViewFlipper vfContenedorIMG;
+
     ImageView imageViewPubli,imageView2Publi,imageView3Publi;
-    //int vfImagenes[]= null;
+
     public fracmento_inicio() {
 
     }
@@ -46,20 +47,16 @@ public class fracmento_inicio extends Fragment {
 
         View view=inflater.inflate(R.layout.fracmento_inicio,container,false);
 
-
-       // TraerImagenJson("http://univalle.tuinvestigacion.com/UniApp/consultarIMG.php");
-
         TraerImagenJson("http://univalle.tuinvestigacion.com/app/jsn/consultarimgprincipal.php");
 
-
-        //TraerImagenJson("http://192.168.1.113/bienestar/consultarIMG.php");
         vfContenedorIMG=view.findViewById(R.id.idviewFlipper);
+
         imageViewPubli=view.findViewById(R.id.img_frac_princi_rotativas);
         imageView2Publi=view.findViewById(R.id.img_frac_princi_rotativas2);
         imageView3Publi=view.findViewById(R.id.img_frac_princi_rotativas3);
 
 
-        int vfImagenes[]= {R.drawable.univalle};
+        int vfImagenes[]= {R.drawable.univallecaicedonia};
 
         for (int i=0;i<vfImagenes.length;i++){
             Llenar_ViewFlipper(vfImagenes[i]);

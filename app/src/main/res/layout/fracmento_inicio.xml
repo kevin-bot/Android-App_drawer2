@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Fracmento.fracmento_inicio">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -21,32 +22,35 @@
 
                 <ImageView
                     android:id="@+id/img_frac_princi_Uni"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/univalle" />
+
+
                 <ViewFlipper
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:layout_marginTop="50dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginBottom="7dp"
-                    android:layout_marginRight="7dp"
-                    android:elevation="4dp"
                     android:id="@+id/idviewFlipper">
+
                     <ImageView
                         android:id="@+id/img_frac_princi_rotativas"
                         android:layout_width="match_parent"
-                        android:layout_height="250dp" />
+                        android:layout_height="250dp"
+                        android:elevation="8dp"/>
 
                     <ImageView
                         android:id="@+id/img_frac_princi_rotativas2"
                         android:layout_width="match_parent"
-                        android:layout_height="250dp" />
+                        android:layout_height="250dp"
+                        android:elevation="8dp"/>
                     <ImageView
                         android:id="@+id/img_frac_princi_rotativas3"
                         android:layout_width="match_parent"
-                        android:layout_height="250dp"/>
+                        android:layout_height="250dp"
+                        android:elevation="8dp"/>
 
                 </ViewFlipper>
 
@@ -63,6 +67,7 @@
         </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 
