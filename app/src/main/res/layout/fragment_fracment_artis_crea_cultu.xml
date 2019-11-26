@@ -72,17 +72,18 @@
                                     android:id="@+id/imagenView1"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/profile"
-                                    android:layout_centerInParent="true"/>
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/profile" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Musica"
-                                    android:textSize="16sp"
                                     android:layout_below="@+id/imagenView1"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp">
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Musica"
+                                    android:textSize="16sp">
 
                                 </TextView>
 
@@ -95,15 +96,15 @@
                             </RelativeLayout>
 
 
-
                         </androidx.cardview.widget.CardView>
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:elevation="8dp"
                             android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:elevation="8dp"
+                            android:gravity="center"
                             android:orientation="vertical">
 
                             <RelativeLayout
@@ -114,27 +115,28 @@
                                     android:id="@+id/imagenView2"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/profile"
-                                    android:layout_centerInParent="true"/>
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/profile" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Teatro"
-                                    android:textSize="16sp"
                                     android:layout_below="@+id/imagenView2"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp">
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Teatro"
+                                    android:textSize="16sp">
 
                                 </TextView>
+
                                 <Button
+                                    android:id="@+id/btnteatro"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/btnteatro"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
-
 
 
                         </androidx.cardview.widget.CardView>
